@@ -1,0 +1,65 @@
+<html>
+    <head>
+  <style>
+   body {
+    margin: 0; /* Обнуляем */
+   }
+
+   .a {
+    color: #ffffff; /* Цвет обычной ссылки */
+    padding: 2px; /* Поля вокруг текста */
+    text-decoration: none;
+   }
+  .a:visited {
+    color: #ffffff; /* Цвет посещенной ссылки */
+   } 
+   .a:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */  
+    background: #6a6a67; /* Цвет фона */
+height: 65;   
+}
+
+   .button  {
+margin: auto;
+text-align: center;
+background-image: linear-gradient(to bottom, #2db945, #2db945);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 7px;
+font-family: Arial;
+color: #fff;
+font-size: 16px;
+padding: 5px 13px 4px 13px;}
+
+</style>
+
+        <title>Detection</title>
+
+
+<table class = "sh" bgcolor = "#2db945" widtH="100%" height="65" border="0" cellpadding="6"> 
+<tr>
+<td>
+
+        <div align="right" >
+            <a href="{{ url_for('ind') }}" class="a">Из файлов</a>
+      
+            <a href="{{ url_for('str') }}" class="a">С веб-камкры</a>
+
+        </div>
+
+        </div>
+</td>
+</tr>
+</table>
+
+<h1 align="center">Детекция с Faster R-CNN</h1>
+<br>
+
+
+    </head >
+    <body>
+
+        {% block content %}{% endblock %}
+    </body>
+</html>
