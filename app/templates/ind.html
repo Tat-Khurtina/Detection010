@@ -29,7 +29,7 @@
 
 {%if filen:%}
  <div align="center">
-<img src="{{ url_for('static', filename=os.path.join('im/result', str(filen))) }}" height="400"></img>
+<img src="{{ url_for('static', filename=os.path.join('im/result', filen)) }}" height="400"></img>
 </div>
  {% endif %}
 <style>
